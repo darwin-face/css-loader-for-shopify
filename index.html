@@ -1,0 +1,27 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="loaders.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1>Hello World!</h1>
+	<div class="loaders" style="background-color: #494949; height: 451px; width: 301px">
+		<div class="loader">
+			<div class="triangle-skew-spin" style="vertical-align: middle; padding-top: 50%">
+				<div style="margin: auto;">
+				</div>
+			</div>
+			<img class="image" src="jasminium-fish-jacket.jpg" style="height:451px;"></img>
+		</div>
+	</div>
+	<script type="text/javascript">
+	$(".image").hide();
+	setTimeout(loader, 5000);
+
+	function loader() {
+		// $("img").one("load", function() {
+			$(".image").show();
+			$(".triangle-skew-spin").hide();
+		// });
+	}
+	</script>
+</body>
